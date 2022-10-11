@@ -1,5 +1,4 @@
-import { Given, When, Then } from "@cucumber/cucumber";
-import { expect } from "chai";
+import { Given, When } from "@cucumber/cucumber";
 
 Given(/^A Web page is opened$/, async function() {
   await browser.url("/inputs");
