@@ -20,11 +20,13 @@ When(/^Perform web interactions with checkboxes$/, async function() {
 
   let element = await $('//form[@id="checkboxes"]/input[1]');
   await element.click();
+  await browser.pause(1000);
   
   element = await $('//form[@id="checkboxes"]/input[1]');
   if(!element.isSelected) {
     await element.click();
   }
+  await browser.pause(1000);
   
   element = await $('//form[@id="checkboxes"]/input[2]');
   const isChecked = await element.isSelected();
