@@ -28,10 +28,12 @@ When(/^Perform windows interactions$/, async function() {
   //const seleniumLink = await $('a[href="http://elementalselenium.com/"]');
   const seleniumLink = await $(`=Click Here`);
   await seleniumLink.click();
+  await browser.pause(1000);
   
   //const newWindow = await $('a[href="/windows/new"]');
   const newWindow = await $(`=Elemental Selenium`);
   await newWindow.click();
+  await browser.pause(1000);
   
   let currentWindowTitle = await browser.getTitle();  
   let parentWindow = await browser.getWindowHandle();
@@ -50,6 +52,7 @@ When(/^Perform windows interactions$/, async function() {
       headerText = await $('<h1>').getText();
     }
   }
+  await browser.pause(1000);
   
   await browser.switchToWindow(parentWindow);
   let parentWindowHeaderText = await $('<h3>').getText();

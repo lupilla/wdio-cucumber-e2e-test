@@ -16,6 +16,7 @@ When(/^Perform web interactions with dropdown$/, async function() {
       2. Select by attribute, text, index
       3. Get a list of options
    */
+  await browser.pause(1000);
 
   let element = await $('#dropdown option[selected="selected"]');
   let value = await element.getText();
@@ -23,11 +24,10 @@ When(/^Perform web interactions with dropdown$/, async function() {
   expect(value).to.equal(text);
   
   const dropdown = await $('#dropdown');
-  //await dropdown.selectByVisibleText("Option 1");
   await browser.pause(1000);
+  //await dropdown.selectByVisibleText("Option 1");
   //await dropdown.selectByAttribute("value", "1");
   await dropdown.selectByIndex(1);
-  await browser.pause(1000);
   element = await $('#dropdown option[selected="selected"]');
   value = await element.getText();
   expect(value).to.equal("Option 1");

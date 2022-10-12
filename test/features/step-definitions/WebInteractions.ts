@@ -21,8 +21,7 @@ When(/^Perform web interactions$/, async function() {
   await element.click(); */
   const numberValue = "12345";
   const numberSplitted = numberValue.split('');
-  
-  await browser.pause(1000);
+
   let inputElement = await $('input[type="number"]');
 
   await inputElement.setValue("222");
@@ -38,11 +37,11 @@ When(/^Perform web interactions$/, async function() {
   await browser.pause(1000);
   
   await inputElement.setValue(numberValue);
-  await browser.pause(1000);
   await inputElement.click();
+  await browser.pause(1000);
   
   for (let char in numberSplitted) {
     await browser.keys(char);
-    await browser.pause(1000);
   }
+  await browser.pause(1000);
 });
