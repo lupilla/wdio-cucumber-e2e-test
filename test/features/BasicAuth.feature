@@ -1,6 +1,6 @@
 Feature: Basic Auth Feature
 
-  @@basicauth
+  @basicauth
   Scenario Outline: Basic Auth interaction
     Given A Web page with basic login is opened
     When Perform web interactions with basic login

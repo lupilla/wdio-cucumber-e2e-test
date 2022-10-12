@@ -1,6 +1,6 @@
 import { Given, When } from "@cucumber/cucumber";
 
-Given(/^A Web page is opened$/, async function() {
+Given(/^A Web page with input text is opened$/, async function() {
   await browser.url("/inputs");
   await browser.setTimeout({
     implicit: 15000,
@@ -9,7 +9,7 @@ Given(/^A Web page is opened$/, async function() {
   //await browser.maximizeWindow();
 });
 
-When(/^Perform web interactions$/, async function() {
+When(/^Perform input text interactions$/, async function() {
   /**
    * Actions:
       1. Type into input box

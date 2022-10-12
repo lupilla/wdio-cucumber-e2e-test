@@ -1,6 +1,7 @@
 Feature: Basic Scroll feature
 
-  @scroll
+  @interactions
+  @basicscroll
   Scenario Outline: Basic Scroll feature
     Given Page with scroll is opened
     When Perform basic scroll interactions

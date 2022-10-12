@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "chai";
 
-Given(/^Google page is opened$/, async function() {
+Given(/^Google page with a search field is opened$/, async function() {
   await browser.url("https://www.google.com");
   await browser.pause(1000);
   let element = await $(`#L2AGLb`);

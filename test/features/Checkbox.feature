@@ -1,5 +1,6 @@
 Feature: Checkbox Feature
 
+  @interactions
   @checkbox
   Scenario Outline: Checkbox interactions
     Given A Web page with checkbox is opened
