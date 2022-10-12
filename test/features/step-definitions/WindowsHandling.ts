@@ -57,8 +57,8 @@ When(/^Perform windows interactions$/, async function() {
   await browser.switchToWindow(parentWindow);
   let parentWindowHeaderText = await $('<h3>').getText();
   
-  expect(windowTitle).to.be.equal(title);
-  expect(headerText).to.be.equal("Elemental Selenium");
-  expect(parentWindowHeaderText).to.be.equal("Opening a new window");
+  expect(windowTitle).to.equal(title);
+  expect(headerText).to.equal("Elemental Selenium");
+  expect(parentWindowHeaderText).to.equal("Opening a new window");
 
 });
