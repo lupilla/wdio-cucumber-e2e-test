@@ -1,5 +1,6 @@
 Feature: Frames feature
 
+  @interactions
   @frames
   Scenario Outline: Frames feature
     Given Page with frames is opened

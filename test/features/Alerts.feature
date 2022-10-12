@@ -1,5 +1,6 @@
 Feature: Alerts Feature
 
+  @interactions
   @alerts
   Scenario Outline: Alerts interactions
     Given A Web page with pop ups is opened

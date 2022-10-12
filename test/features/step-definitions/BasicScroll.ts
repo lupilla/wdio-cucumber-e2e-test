@@ -15,7 +15,7 @@ When(/^Perform basic scroll interactions$/, async function() {
   */
   await browser.pause(1000);
   await (await $(`#page-footer`)).scrollIntoView();
-  //If you want to get the element at the bottom, use false:
+  //If you want to get the element at the bottom, use false flag:
   //await (await $(`#page-footer`)).scrollIntoView(false);
   await browser.pause(1000);
 });

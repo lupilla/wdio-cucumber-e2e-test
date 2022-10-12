@@ -1,5 +1,6 @@
 Feature: File Upload Feature
 
+  @interactions
   @fileupload
   Scenario Outline: File Upload Interactions
     Given A Web page with fileUpload input is opened
