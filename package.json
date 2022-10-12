@@ -1,7 +1,7 @@
 {
-  "name": "ejercicio01",
+  "name": "saucedemo",
   "version": "1.0.0",
-  "description": "wdio e2e test",
+  "description": "saucedemo",
   "main": "index.js",
   "scripts": {
     "test": "npx wdio wdio.conf.ts",
